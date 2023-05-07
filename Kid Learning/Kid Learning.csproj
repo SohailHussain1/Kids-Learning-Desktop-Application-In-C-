@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15672516-1492-43DD-8F61-2819227D5EEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kid_Learning</RootNamespace>
+    <AssemblyName>Kid Learning</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animals.Designer.cs">
+      <DependentUpon>Animals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bird.Designer.cs">
+      <DependentUpon>bird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Color.Designer.cs">
+      <DependentUpon>Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Animals.resx">
+      <DependentUpon>Animals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bird.resx">
+      <DependentUpon>bird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Color.resx">
+      <DependentUpon>Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\69b90ed4e4087e02faaaccf33a843dfb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wild-animals-name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\242-2427509_transparent-silly-monkey-clipart-animated-picture-of-animals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-lion-cartoon-smiling-lion-mammal-cat-like-mammal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba2cf9be9763ed4989bdac3bfd8eec71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4fe863a71b807961211ad6aa2238bb53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-cartoon-blue-sky-with-cloud-and-sun-background-wallpaper-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba2cf9be9763ed4989bdac3bfd8eec71 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\242-2427509_transparent-silly-monkey-clipart-animated-picture-of-animals-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123123-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123123123-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\266566-Adventure_Time-cartoon-748x417.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best-diet-quiz-feature-tw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute_cartoon_animal_set_6822296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canvas-frame-template-in-the-garden-scene-isolated-on-white-background-400-271671215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3ac477c10932ec6f9a281fc14d164aac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Birds-Name-In-English.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Birds-Names-e1662794931421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d820cdb453743e417e8675520b34acfb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enhanced-1655-1644841481-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\686b6c4f5a9db003899ea1debfcea5da.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Birds-Names-e16627949314211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basic-colors-educational-page-kids-cartoon-illustration-happy-children-characters-132861087.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\547e02bb98ded6b15c3e663bbbec8d2f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\547e02bb98ded6b15c3e663bbbec8d2f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\547e02bb98ded6b15c3e663bbbec8d2f2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1180840343-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2811%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5d1225b20a78f72b1748d91c_english_kids_colours_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5d1225b817fe6dc6d3eb58f7_english_kids_colours_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5d1225d15cf154c062d94c87_english_kids_colours_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2815%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
